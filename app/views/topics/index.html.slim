@@ -46,6 +46,18 @@
           .panel-body
             a.btn.btn-success.btn-block href=new_topic_path(category_id: @category.try(:slug))
               = t '.create_topic'
+        .panel.panel-info
+          .panel-heading
+            ="联系站长"
+          .panel-body
+            a href="mailto:huaitao-deng@foxmail.com"
+              i class="fa fa-envelope"
+              = "  huaitao-deng@foxmail.com"
+            br
+            a href="http://github.com/lanrion/" target="_blank"
+              i class="fa fa-github"
+              = "  lanrion"
+
         .panel
           .panel-body
             ul.nav.nav-pills.nav-stacked
