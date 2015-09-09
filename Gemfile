@@ -109,6 +109,7 @@ end
 
 group :development, :test do
   gem 'factory_girl_rails', '~> 4.3.0'
+  gem 'meta_request'
 end
 
 # Cache

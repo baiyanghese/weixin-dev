@@ -51,6 +51,7 @@ GEM
     byebug (2.7.0)
       columnize (~> 0.3)
       debugger-linecache (~> 1.2)
+    callsite (0.0.11)
     carrierwave (0.9.0)
       activemodel (>= 3.2.0)
       activesupport (>= 3.2.0)
@@ -90,6 +91,7 @@ GEM
     font-awesome-sass (4.1.0)
       sass (~> 3.2)
     formatador (0.2.5)
+    git-version-bump (0.15.1)
     gravtastic (3.2.6)
     guard (2.6.1)
       formatador (>= 0.2.4)
@@ -136,6 +138,10 @@ GEM
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    meta_request (0.3.4)
+      callsite (~> 0.0, >= 0.0.11)
+      rack-contrib (~> 1.1)
+      railties (>= 3.0.0, < 5.0.0)
     method_source (0.8.2)
     mime-types (1.25.1)
     mina (0.3.1)
@@ -167,6 +173,9 @@ GEM
     rack (1.5.2)
     rack-cache (1.2)
       rack (>= 0.4)
+    rack-contrib (1.4.0)
+      git-version-bump (~> 0.15)
+      rack (~> 1.4)
     rack-livereload (0.3.15)
       rack
     rack-protection (1.5.3)
@@ -295,6 +304,7 @@ DEPENDENCIES
   jbuilder (~> 1.2)
   jquery-rails
   kaminari (~> 0.15.1)
+  meta_request
   mina
   mina-sidekiq
   mini_magick (~> 3.7.0)
