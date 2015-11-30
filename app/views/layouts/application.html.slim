@@ -68,7 +68,7 @@ html
               i.fa.fa-bars
         #navbar.collapse.navbar-collapse
           ul.nav.navbar-nav
-            li class=('active' if request.original_fullpath =~ /^\/topics/)
+            li class=('active' if request.original_fullpath =~ /^\/topics/ || request.original_fullpath == '/')
               a href=topics_path
                 = t '.community'
 
